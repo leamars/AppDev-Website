@@ -151,17 +151,24 @@ body {
 	font-size: 1.2em;
 }
 
-.color .members .container p {
-	font-size: 1.2em;
+h4 {
+	font-size: 4em;
+	text-align: center;
+}
+
+.container .peeps p {
+	font-size: 1em;
 	font-family: "Helvetica Neue";
 	background-color:rgba(0,0,0,0.34);
 	margin-top:0px;
 	padding:0px 5px;
 	font-weight: 100;
 	max-width:270px;
+	font-weight: 200;
+	
 }
 
-.color .members .container p em {
+.container .peeps p em {
 	font-weight: 500;
 	font-style: normal;
 }
@@ -276,7 +283,7 @@ body {
 
 .peeps_block img {
 	width:100%;
-	-webkit-filter: grayscale(100%);
+	-webkit-filter: sepia(100%);
 	-webkit-transition-duration: 0.5s, 0.3s;
 }
 
@@ -310,7 +317,7 @@ body {
 	-webkit-transition-duration: 0s, 0s;
 }
 
-.color .container .peeps_block p {
+.container .peeps .peeps_block p {
 	position:absolute;
 	top:60%;
 	left:0px;
@@ -340,7 +347,7 @@ body {
 .color .portfolio .container {
 	width: 100%;
 	height: 100%;
-	background-image: url("http://www.hdwallpapersplus.com/wp-content/uploads/2013/03/by_the_light_of_the_moon_scott_river_klamath_national_forest_california.jpg");
+	background-image: url("../img/old_moon.png");
 	padding-top: 30px;
 	padding-bottom: 0px;
 }
@@ -348,7 +355,7 @@ body {
 .color .about .container {
 	width: 100%;
 	height: 100%;
-	background-image: url("http://www.hdwallpapersplus.com/wp-content/uploads/2013/03/Rivers_wallpapers_252.jpg");
+	background-image: url("../img/old_moon.png");
 	padding-top: 30px;
 	padding-bottom: 0px;
 }
@@ -369,10 +376,11 @@ body {
 	padding-bottom: 0px;
 }
 
+
 .color .contact .container {
 	width: 100%;
 	height: 100%;
-	background-image: url("http://www.hdwallpapersplus.com/wp-content/uploads/2013/03/Rivers_wallpapers_252.jpg");
+	background-image: url("../img/old_moon.png");
 	padding-top: 30px;
 	padding-bottom: 0px;
 }
@@ -428,20 +436,21 @@ body {
 .jobs {
 	margin-bottom: 20px;
 	margin-top: 20px;
-	-webkit-filter: grayscale(40%);
-	-webkit-filter: brightness(50%);
-	-webkit-transition: -webkit-filter 0.5s ease-out;
+	-webkit-filter: grayscale(80%);
+	-webkit-filter: brightness(30%);
+	-webkit-transition: -webkit-filter 0.3s ease-out;
 	cursor: pointer;
+	max-width: 300px;
 	
 }
 
 .jobs:hover {
-	-webkit-filter: grayscale(80%);
-	-webkit-filter: brightness(30%);
-	-webkit-transition: -webkit-filter 0.5s ease-out;
+	-webkit-filter: grayscale(0%);
+	-webkit-filter: brightness(70%);
+	-webkit-transition: -webkit-filter 0.3s ease-out;
 }
 
-#form {
+.form {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 40px;
@@ -449,22 +458,101 @@ body {
 
 .jobPic {
 	position: relative;
+	cursor: pointer;
 }
 
 .jobPic h2 {
-	position: absolute; 
-   top: 50px; 
-   left: 0; 
+   position: absolute; 
+   top: 172px; 
    width: 100%;
 }
 
+#developers {
+	left:-54px;	
+}
+
+#designers {
+	left:-55px;	
+}
+
+#ux {
+	left:-79px;	
+}
+
+#community {
+	left:-56px;	
+}
+
+.redTitle {
+	color:#934c4c;
+}
+
+.jobPic h3 { 
+   position: absolute; 
+   margin-left:40px;
+   top: 30px; 
+   width: 80%;
+   font-size: xx-small;
+   font-family: "Verdana";
+   text-align: left;
+   opacity: 0;
+   -webkit-transition: opacity 0.2s ease-in;
+}
+
+.center {
+	text-align: center;
+}
+
+.small {
+	font-size: 0.5em;
+	font-family: "Verdana";
+}
+
+
 .jobPic h2 span { 
-   color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
+   color: white;  
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
+   padding:10px;
+}
+
+.jobPic:hover h3 {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s ease-out;
+}
+
+.jobRole {
+	background-color: rgba(0,0,0,0.34);
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+}
+
+.logo {
+	vertical-align: center;
+	text-align: center;
+	margin: auto;
+}
+
+textarea {
+    resize: none;
+}
+    
+.redForm {
+	color:#934c4c;
+	text-align: center;
+	font-weight: 700;
+}   
+
+.footic {
+	-webkit-filter: grayscale(100%) brightness(150%);
+	-webkit-transition: -webkit-filter 0.2s ease-out;
+
+}
+
+.footic:hover {
+	-webkit-filter: none;
+	-webkit-transition: -webkit-filter 0.2s ease-out;
 }
 
 /* Set the fixed height of the footer here */

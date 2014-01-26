@@ -7,9 +7,9 @@ include('inc/header.php');
         <div class="about">
             <div class="container">
                 <div class="page-header main-content">
-                    <h1>We do things!</h1>
+                    <h1 class="redTitle">We do things!</h1>
 
-                    <h3>Someone should talk about it!</h3>
+                    <h3 class="redTitle">Someone should talk about it!</h3>
 
                     <div class="col-lg-3"></div>
 

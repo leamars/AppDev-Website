@@ -2,156 +2,135 @@
 $activeClass = "members";
 include('inc/header.php'); 
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
     <div class="color">
         <div class="members">
             <div class="container">
                 <div class="page-header main-content">
-                    <h1>The faces behind the apps!</h1>
-                </div>
-
-                <div class="peeps">
-                <div class="col-lg-3">
-                <div class="maijidBox">
-                    <div class="peeps_block" id="maijid1"><a href="#maijid"><img class="responsive" id="maj" src="img/maijid.png"> 
-	                    <p>Maijid</p></a> 
-                    </div>
-                    <p><em>Superme Overloard</em></br>
-                    iOS Developer/Leader</br>
-                    <a href="https://www.linkedin.com/pub/maijid-moujaled/44/a42/873" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/drjid" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a>
-                    <a href="https://twitter.com/drjid" target="_blank"><img class="responsive bioLogo" src="img/twitterLogo.png"></a>  
-                    <a href="http://www.cs.grinnell.edu/~moujaled/" target="_blank"><img class="responsive bioLogo" src="img/home.png"></a> </br>
-                    
-                    <a href="https://itunes.apple.com/us/app/g-licious/id523738999?mt=8" target="_blank"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a>                  
-                    <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a>
-                    <a href="https://github.com/GrinnellAppDev/Grinnell-Events-iOS" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a>
-                    </p>
-                    
-                    </div>  
-                </div> 
-                      
-               
-                 <div class="col-lg-3">   
-	                <div class="peeps_block" id="colin1"><a href="#colin"><img class="responsive" src="img/colin.png">
-		                <p>Colin</p></a>
-	                </div>
-	                <p><em>Pickles</em></br>
-                    Senior iOS Developer</br>
-                    <a href="https://www.linkedin.com/in/colintremblay" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/tremblay" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> 
-                    <a href="http://www.colintremblay.com" target="_blank"><img class="responsive bioLogo" src="img/home.png"></a> </br>
-                    
-                    <a href="https://itunes.apple.com/us/app/g-licious/id523738999?mt=8" target="_blank"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> 
-                    <a href="https://itunes.apple.com/us/app/kdic/id740353767?mt=8" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> 
-                    <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a>
-                    <a href="https://itunes.apple.com/us/app/grinnell-db/id726496362?mt=8" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a>
-                    </p> 
-                 </div>
-                 
-                 <div class="col-lg-3">
-	                <div class="peeps_block" id="patrick1"><a href="#patrick"><img class="responsive" src="img/patrick.png">
-		                <p>Patrick</p></a>
-	                </div>
-	                <p><em>Java Commander</em></br>
-                    Android Developer/Leader</br> 
-                    <a href="https://github.com/triestpa" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> </br>
-                    
-                    <a href="https://play.google.com/store/apps/details?id=edu.grinnell.glicious" target="_blank"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> 
-                    <a href="https://play.google.com/store/apps/details?id=edu.grinnell.kdic&hl=en" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> 
-                    <a href="https://play.google.com/store/apps/details?id=edu.grinnell.sandb" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a>
-                    <a href="https://github.com/GrinnellAppDev/Grinnell-Events-Android" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a>
-                    </p> 
-                 </div>
-	                
-	             <div class="col-lg-3">
-	                <div class="peeps_block" id="lea1"><a href="#lea"><img class="responsive" src="img/lea.png">
-		                <p>Lea</p></a>
-	                </div>
-	                <p><em>Boop</em></br>
-                    iOS Developer/Designer</br>
-                    <a href="https://si.linkedin.com/pub/lea-marolt-sonnenschein/31/b38/886/" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/leamars" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a>
-                    <a href="https://twitter.com/hellosunschein" target="_blank"><img class="responsive bioLogo" src="img/twitterLogo.png"></a>  
-                    <a href="http://hellosunschein.com/" target="_blank"><img class="responsive bioLogo" src="img/home.png"></a> </br>
-                    
-                    <a href="https://itunes.apple.com/us/app/g-licious/id523738999?mt=8"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> 
-                    <a href="https://itunes.apple.com/us/app/kdic/id740353767?mt=8" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> 
-                    <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a>
-                    <a href="https://github.com/GrinnellAppDev/Grinnell-Events-iOS" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a>
-                    </p>
-	             </div>
-                </div>
-                
-                <div class="col-lg-3">
-                    <div class="peeps_block" id="spencer1"><a href="#spencer"><img class="responsive" src="img/spencer.png"> 
-	                    <p>Spencer</p></a> 
-                    </div>
-                    <p><em>Eclipse Master</em></br>
-                    Android Developer</br>
-                    <a href="https://www.linkedin.com/pub/spencer-liberto/54/310/986" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/liberto" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> </br>
-                                     
-                    <a href="https://play.google.com/store/apps/details?id=edu.grinnell.kdic&hl=en" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a>
-                    <a href="https://github.com/GrinnellAppDev/Grinnell-DB-Android/" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a>
-                    </p>
-                    
-                </div>   
-                      
-               
-                 <div class="col-lg-3">   
-	                <div class="peeps_block" id="danielT1"><a href="#danielT"><img class="responsive" src="img/danielT.png">
-		                <p>Daniel T</p></a>
-	                </div>
-	                <p><em>Xcoded</em></br>
-                    iOS Developer</br>
-                    <a href="https://www.linkedin.com/pub/daniel-torres/68/151/b8b" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/torresda" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a>  </br>
-                    
-                    <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a> 
-                    <a href="https://itunes.apple.com/us/app/kdic/id740353767?mt=8" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> 
-                    <a href="https://itunes.apple.com/us/app/grinnell-db/id726496362?mt=8" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a>
-                    </p> 
-                 </div>
-                 
-                 <div class="col-lg-3">
-	                <div class="peeps_block" id="tiffany1"><a href="#tiffany"><img class="responsive" src="img/tiffany.png">
-		                <p>Tiffany</p></a>
-	                </div>
-	                <p><em>Eclipsed</em></br>
-                    Android Developer</br>
-                    <a href="https://www.linkedin.com/pub/tiffany-nguyen/82/a90/ab5" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/nguyenti" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> </br>
-                    
-                    <a href="https://github.com/GrinnellAppDev/Grinnell-Events-Android" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a>
-                    </p> 
-                 </div>
-	                
-	             <div class="col-lg-3">
-	                <div class="peeps_block" id="danielG1"><a href="#danielG"><img class="responsive" src="img/danielG.png">
-		                <p>Daniel G</p></a>
-	                </div>
-	                <p><em>Mr. G</em></br>
-                    Android Developer</br>
-                    <a href="https://www.linkedin.com/pub/daniel-goldstein/64/752/468" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> 
-                    <a href="https://github.com/goldstei1" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> </br>
-                     
-                    <a href="https://github.com/GrinnellAppDev/Grinnell-DB-Android/" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a> 
-                    </p>
-	             </div>
-                </div>
-
-	                
-                <div class="col-lg-12"></div>
-
-
-
+                    <h1 class="redTitle">The faces behind the apps!</h1>
                 </div>
             </div>
         </div>
     </div>
 
-<!--
+    <div class="container">
+        <div class="peeps">
+            <div class="col-lg-3">
+                <div class="maijidBox">
+                    <div class="peeps_block" id="maijid1">
+                        <a href="#maijid"><img class="responsive" id="maj" src="img/maijid.png"></a>
+
+                        <p>Maijid</p>
+                    </div>
+
+                    <p><em>DrJid</em><br>
+                    iOS Developer/Leader<br>
+                    <a href="https://www.linkedin.com/pub/maijid-moujaled/44/a42/873" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/drjid" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> <a href="https://twitter.com/drjid" target="_blank"><img class="responsive bioLogo" src="img/twitterLogo.png"></a> <a href="http://www.cs.grinnell.edu/~moujaled/" target="_blank"><img class="responsive bioLogo" src="img/home.png"></a><br>
+                    <a href="https://itunes.apple.com/us/app/g-licious/id523738999?mt=8" target="_blank"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a> <a href="https://github.com/GrinnellAppDev/Grinnell-Events-iOS" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="peeps_block" id="colin1">
+                    <a href="#colin"><img class="responsive" src="img/colin.png"></a>
+
+                    <p>Colin</p>
+                </div>
+
+                <p><em>Pickles</em><br>
+                Senior iOS Developer<br>
+                <a href="https://www.linkedin.com/in/colintremblay" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/tremblay" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> <a href="http://www.colintremblay.com" target="_blank"><img class="responsive bioLogo" src="img/home.png"></a><br>
+                <a href="https://itunes.apple.com/us/app/g-licious/id523738999?mt=8" target="_blank"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> <a href="https://itunes.apple.com/us/app/kdic/id740353767?mt=8" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a> <a href="https://itunes.apple.com/us/app/grinnell-db/id726496362?mt=8" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a></p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="peeps_block" id="patrick1">
+                    <a href="#patrick"><img class="responsive" src="img/patrick.png"></a>
+
+                    <p>Patrick</p>
+                </div>
+
+                <p><em>Java Commander</em><br>
+                Android Developer/Leader<br>
+                <a href="https://github.com/triestpa" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a><br>
+                <a href="https://play.google.com/store/apps/details?id=edu.grinnell.glicious" target="_blank"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> <a href="https://play.google.com/store/apps/details?id=edu.grinnell.kdic&hl=en" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> <a href="https://play.google.com/store/apps/details?id=edu.grinnell.sandb" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a> <a href="https://github.com/GrinnellAppDev/Grinnell-Events-Android" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a></p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="peeps_block" id="lea1">
+                    <a href="#lea"><img class="responsive" src="img/lea.png"></a>
+
+                    <p>Lea</p>
+                </div>
+
+                <p><em>Boop</em><br>
+                iOS Developer/Designer<br>
+                <a href="https://si.linkedin.com/pub/lea-marolt-sonnenschein/31/b38/886/" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/leamars" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a> <a href="https://twitter.com/hellosunschein" target="_blank"><img class="responsive bioLogo" src="img/twitterLogo.png"></a> <a href="http://hellosunschein.com/" target="_blank"><img class="responsive bioLogo" src="img/home.png"></a><br>
+                <a href="https://itunes.apple.com/us/app/g-licious/id523738999?mt=8"><img class="responsive appLogo" src="img/gLiciousLogo.png"></a> <a href="https://itunes.apple.com/us/app/kdic/id740353767?mt=8" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a> <a href="https://github.com/GrinnellAppDev/Grinnell-Events-iOS" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a></p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="peeps_block" id="spencer1">
+                    <a href="#spencer"><img class="responsive" src="img/spencer.png"></a>
+
+                    <p>Spencer</p>
+                </div>
+
+                <p><em>Eclipse Master</em><br>
+                Android Developer<br>
+                <a href="https://www.linkedin.com/pub/spencer-liberto/54/310/986" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/liberto" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a><br>
+                <a href="https://play.google.com/store/apps/details?id=edu.grinnell.kdic&hl=en" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> <a href="https://github.com/GrinnellAppDev/Grinnell-DB-Android/" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a></p>
+            </div>
+        </div>
+
+        <div class="peeps">
+            <div class="col-lg-3">
+                <div class="peeps_block" id="danielT1">
+                    <a href="#danielT"><img class="responsive" src="img/danielT.png"></a>
+
+                    <p>Daniel T</p>
+                </div>
+
+                <p><em>Xcoded</em><br>
+                iOS Developer<br>
+                <a href="https://www.linkedin.com/pub/daniel-torres/68/151/b8b" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/torresda" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a><br>
+                <a href="https://itunes.apple.com/us/app/s-b/id638912711?mt=8" target="_blank"><img class="responsive appLogo" src="img/sbLogo.png"></a> <a href="https://itunes.apple.com/us/app/kdic/id740353767?mt=8" target="_blank"><img class="responsive appLogo" src="img/kdicLogo.png"></a> <a href="https://itunes.apple.com/us/app/grinnell-db/id726496362?mt=8" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a></p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="peeps_block" id="tiffany1">
+                    <a href="#tiffany"><img class="responsive" src="img/tiffany.png"></a>
+
+                    <p>Tiffany</p>
+                </div>
+
+                <p><em>Eclipsed</em><br>
+                Android Developer<br>
+                <a href="https://www.linkedin.com/pub/tiffany-nguyen/82/a90/ab5" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/nguyenti" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a><br>
+                <a href="https://github.com/GrinnellAppDev/Grinnell-Events-Android" target="_blank"><img class="responsive appLogo" src="img/eventsLogo.png"></a></p>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="peeps_block" id="danielG1">
+                    <a href="#danielG"><img class="responsive" src="img/danielG.png"></a>
+
+                    <p>Daniel G</p>
+                </div>
+
+                <p><em>Mr. G</em><br>
+                Android Developer<br>
+                <a href="https://www.linkedin.com/pub/daniel-goldstein/64/752/468" target="_blank"><img class="responsive bioLogo" src="img/linkedLogo.png"></a> <a href="https://github.com/goldstei1" target="_blank"><img class="responsive bioLogo" src="img/githubLogo.png"></a><br>
+                <a href="https://github.com/GrinnellAppDev/Grinnell-DB-Android/" target="_blank"><img class="responsive appLogo" src="img/dbLogo.png"></a></p>
+            </div>
+        </div>
+    </div><!--
     <div class="membs">
     <div class="container">
     <div id="maijid">
@@ -326,7 +305,7 @@ include('inc/header.php');
     </div>
 -->
     <?php 
-        include('inc/footer.php'); 
-        ?>
+                include('inc/footer.php'); 
+                ?>
 </body>
 </html>

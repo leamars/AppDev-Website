@@ -9,9 +9,9 @@ include('inc/header.php');
         <div class="portfolio">
             <div class="container">
                 <div class="page-header main-content">
-                    <h1>We've made some apps!</h1>
+                    <h1 class="redTitle">We've made some apps!</h1>
 
-                    <h3>Take a look at them in all their glory!</h3>
+                    <h3 class="redTitle">Take a look at them in all their glory!</h3>
 
                     <div class="col-lg-3"></div>
 
@@ -32,7 +32,7 @@ include('inc/header.php');
 
         <div class="aboutContent" id="events">
             <div class="col-lg-7">
-                <h1><a href="portfolio.php"><span class="glyphicon glyphicon-chevron-up"></span> </a>Grinnell Events!</h1>
+                <h1><a href="portfolio.php"><span class="glyphicon glyphicon-chevron-up"></span></a>Grinnell Events!</h1>
 
                 <p class="text-muted">"Lets users see all events happening on the college campus, and add them to their calendar."</p>
 

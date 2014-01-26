@@ -1,6 +1,19 @@
 var onceThru = false;
 var pathname = window.location.pathname;
+var devs = false;
+var desi = false;
+var uxd = false;
+var comm = false;
 $(document).ready(function() {
+	
+	var questions = ["How many windows are there in north campus?", "Why do the fire alarms in Haines trigger the fire alarms in the whole south campus?", "Do you know Betty, the dining hall lady?", "If you had 13 colorful marbles, which one would you give to Raynard Kington?", "Some other random shit..."];
+	
+	var num = Math.floor(Math.random() * questions.length);
+	
+	var selectedQuestion = questions[num];
+	
+	$("label[for='q3']").text(selectedQuestion);
+	
 	$(window).scroll($.debounce(500, true, function() {
 		$(".navbar-inverse").fadeTo("slow", 0.8);
 	}));
@@ -42,68 +55,110 @@ $(document).ready(function() {
 	}
 	
 	$(".maijidBox").mouseenter(function() {
-		$("#maijid1").addClass("animated tada");
+		$("#maijid1").addClass("animated pulse");
 	});
-	
-	$(".maijidBox").mouseleave(function() {
-		$("#maijid1").removeClass("animated tada");
-	});
+
 	
 	$("#colin1").mouseover(function() {
-		$("#colin1").addClass("animated tada");
+		$("#colin1").addClass("animated pulse");
 	});
 	
-	$("#colin1").mouseleave(function() {
-		$("#colin1").removeClass("animated tada");
-	});
 	
 	$("#patrick1").mouseover(function() {
-		$("#patrick1").addClass("animated tada");
-	});
-	
-	$("#patrick1").mouseleave(function() {
-		$("#patrick1").removeClass("animated tada");
+		$("#patrick1").addClass("animated pulse");
 	});
 	
 	$("#lea1").mouseover(function() {
-		$("#lea1").addClass("animated tada");
-	});
-	
-	$("#lea1").mouseleave(function() {
-		$("#lea1").removeClass("animated tada");
+		$("#lea1").addClass("animated pulse");
 	});
 	
 	$("#tiffany1").mouseover(function() {
-		$("#tiffany1").addClass("animated tada");
+		$("#tiffany1").addClass("animated pulse");
 	});
 	
-	$("#tiffany1").mouseleave(function() {
-		$("#tiffany1").removeClass("animated tada");
-	});
 	
 	$("#danielG1").mouseover(function() {
-		$("#danielG1").addClass("animated tada");
+		$("#danielG1").addClass("animated pulse");
 	});
 	
-	$("#danielG1").mouseleave(function() {
-		$("#danielG1").removeClass("animated tada");
-	});
 	
 	$("#danielT1").mouseover(function() {
-		$("#danielT1").addClass("animated tada");
+		$("#danielT1").addClass("animated pulse");
 	});
 	
-	$("#danielT1").mouseleave(function() {
-		$("#danielT1").removeClass("animated tada");
-	});
 	
 	$("#spencer1").mouseover(function() {
-		$("#spencer1").addClass("animated tada");
+		$("#spencer1").addClass("animated pulse");
 	});
 	
-	$("#spencer1").mouseleave(function() {
-		$("#spencer1").removeClass("animated tada");
+	
+	$("#devs").click( function() {
+
+		if (desi == true || devs == true || uxd == true || comm == true) {
+			$(".jobRole").empty();
+		}
+	
+		if (($(".jobRole").is(':empty')) || (devs == false)) { 
+			$(".jobRole").append("<h3 class='redTitle'> DEVELOPER </h2> As a trainee, you would be assigned a mentor (current Senior/Junior Developer) and will partake in a semester long course on either iOS Development or Android Development. The end of the course will involve a final project of your choice. Once you have completed this program successfully, you may get a spot as a Junior Developer.  </p>");
+		}
+		else {
+		$(".jobRole").empty();
+		}
+		devs = true;
+		desi = false;
+		uxd = false;
+		comm = false;
 	});
+	
+		$("#desi").click( function() {
+		if (desi == true || devs == true || uxd == true || comm == true) {
+			$(".jobRole").empty();
+		}
+	
+		if (($(".jobRole").is(':empty')) || (desi == false)) { 
+			$(".jobRole").append("<h3 class='redTitle'> UX/GRAPHIC DESIGNER </h3> <p> As a designer on Grinnell Appdev, you are creating the very best product for all our users in the world. You will be involved in all aspects of the product development process and collaborate closely with the product and engineering team throughout the entire project lifecycle. You would design application flows and experiences that are  astonishingly simple and elegant. </p> <p>You will learn and develop skills relating to product design, interaction design, and visual design, and will own the experience for the products you work on. You should have a sense of product design, and be a self-starter with a love for learning. </p>");
+		}
+		else {
+		$(".jobRole").empty();
+		}
+		devs = false;
+		desi = true;
+		uxd = false;
+		comm = false;
+	});
+	
+		$("#uxd").click( function() {
+		if (desi == true || devs == true || uxd == true || comm == true) {
+			$(".jobRole").empty();
+		}
+		if (($(".jobRole").is(':empty')) || (uxd == false)) { 
+			$(".jobRole").append("<h3 class='redTitle'> FINANCIAL OFFICER </h3><p> Take Care of everything financial related to Grinnell Appdev. Assist with preparing budgets and cash flows. Implement financial policies and procedures. This is a first time hire for this position, As such, we're looking for someone with more experience to own this department.  </p>");
+		}
+		else {
+		$(".jobRole").empty();
+		}
+		devs = false;
+		desi = false;
+		uxd = true;
+		comm = false;
+	});
+	
+		$("#comm").click( function() {
+		if (desi == true || devs == true || comm == true || uxd == true) {
+			$(".jobRole").empty();
+		}
+		if (($(".jobRole").is(':empty')) || (comm == false)) { 
+			$(".jobRole").append("<h3 class='redTitle'> COMMUNITY BUILDER </h3><p> As a Community Developer, you would help us develop and expand our community and/or blogging outreach efforts.<br>Become an advocate for Grinnell Appdev in Social Media spaces, engaging in dialogues and answering questions where appropriate. Implement a proactive strategy for capturing customer online reviews. Monitor online perceptions of the group and respond accordingly. Study the impact that our applications may have on society at large.</p>");
+		}
+		else {
+		$(".jobRole").empty();
+		}
+		devs = false;
+		desi = false;
+		uxd = false;
+		comm = true;
+	});
+	
 	
 	$('#events').waypoint(function() {
 		document.getElementById("events1").style.display = "inline";

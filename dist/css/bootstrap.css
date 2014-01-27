@@ -786,6 +786,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 .container:before,
@@ -4324,6 +4325,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  max-height: 52px;
 }
 
 .navbar:before,
@@ -5229,7 +5231,8 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background: url("http://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg") repeat;
+  background: url("../../img/noyce.png") repeat;
+  min-height: 1080px;
 }
 
 .jumbotron h1,

@@ -2,14 +2,6 @@
 $activeClass = "about";
 include('inc/header.php'); 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-
-<html>
-<head>
-    <title></title>
-</head>
-
-<body>
     <div class="color">
         <div class="about">
             <div class="container">

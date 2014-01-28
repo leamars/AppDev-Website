@@ -3,7 +3,7 @@
       <div class="container">
 	        
         <div class ="col-lg-3">
-      		<p class="text-muted"> &copy; Grinnell AppDev, 2014 </p>
+      		<p class="text-muted"> &copy; Grinnell AppDev, 2014</p>
       	</div>
       	 <div class ="col-lg-1"></div>
       	

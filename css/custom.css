@@ -283,38 +283,86 @@ h4 {
 
 .peeps_block img {
 	width:100%;
+	filter: sepia(100%) saturate(60%);
 	-webkit-filter: sepia(100%) saturate(60%);
+	-moz-filter: sepia(100%) saturate(60%);
+	-o-filter: sepia(100%) saturate(60%);
+	-ms-filter: sepia(100%) saturate(60%);
+	transition-duration: 0.5s, 0.3s;
 	-webkit-transition-duration: 0.5s, 0.3s;
+	-moz-transition-duration: 0.5s, 0.3s;
+	-o-transition-duration: 0.5s, 0.3s;
+	-ms-transition-duration: 0.5s, 0.3s;
 }
 
 .peeps_block img:hover {
+	filter: none;
 	-webkit-filter: none;
+	-moz-filter: none;
+	-o-filter: none;
+	-ms-filter: none;
+	transition-duration: 0.5s, 0.3s;
 	-webkit-transition-duration: 0.5s, 0.3s;
+	-moz-transition-duration: 0.5s, 0.3s;
+	-o-transition-duration: 0.5s, 0.3s;
+	-ms-transition-duration: 0.5s, 0.3s;
 }
 
 .bioLogo {
 	max-width: 25px;
 	max-height: 25px;
+	filter: brightness(500%);
 	-webkit-filter: brightness(500%);
+	-moz-filter: brightness(500%);
+	-o-filter: brightness(500%);
+	-ms-filter: brightness(500%);
+	transition-duration: 0s, 0s;
 	-webkit-transition-duration: 0s, 0s;
+	-moz-transition-duration: 0s, 0s;
+	-o-transition-duration: 0s, 0s;
+	-ms-transition-duration: 0s, 0s;
 }
 
 .bioLogo:hover {
+	filter: none;
 	-webkit-filter: none;
+	-moz-filter: none;
+	-o-filter: none;
+	-ms-filter: none;
+	transition-duration: 0s, 0s;
 	-webkit-transition-duration: 0s, 0s;
+	-moz-transition-duration: 0s, 0s;
+	-o-transition-duration: 0s, 0s;
+	-ms-transition-duration: 0s, 0s;
 }
 
 .appLogo {
 	max-width: 50px;
 	max-height: 50px;
 	padding: 5px 0px;
+	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	transition-duration: 0s, 0s;
 	-webkit-transition-duration: 0s, 0s;
+	-moz-transition-duration: 0s, 0s;
+	-o-transition-duration: 0s, 0s;
+	-ms-transition-duration: 0s, 0s;
 }
 
 .appLogo:hover {
+	filter: none;
 	-webkit-filter: none;
+	-moz-filter: none;
+	-o-filter: none;
+	-ms-filter: none;
+	transition-duration: 0s, 0s;
 	-webkit-transition-duration: 0s, 0s;
+	-moz-transition-duration: 0s, 0s;
+	-o-transition-duration: 0s, 0s;
+	-ms-transition-duration: 0s, 0s;
 }
 
 .container .peeps .peeps_block p {
@@ -454,24 +502,52 @@ h4 {
 }
 
 .inColor {
+	filter: blur(100%);
 	-webkit-filter: blur(100%);
+	-moz-filter: blur(100%);
+	-o-filter: blur(100%);
+	-ms-filter: blur(100%);
 }
 
 .jobs {
 	margin-bottom: 20px;
 	margin-top: 20px;
+	filter: grayscale(80%);
 	-webkit-filter: grayscale(80%);
+	-moz-filter: grayscale(80%);
+	-o-filter: grayscale(80%);
+	-ms-filter: grayscale(80%);
+	filter: brightness(30%);
 	-webkit-filter: brightness(30%);
+	-moz-filter: brightness(30%);
+	-o-filter: brightness(30%);
+	-ms-filter: brightness(30%);
+	transition: -webkit-filter 0.3s ease-out;
 	-webkit-transition: -webkit-filter 0.3s ease-out;
+	-moz-transition: -webkit-filter 0.3s ease-out;
+	-o-transition: -webkit-filter 0.3s ease-out;
+	-ms-transition: -webkit-filter 0.3s ease-out;
 	cursor: pointer;
 	max-width: 300px;
 	
 }
 
 .jobs:hover {
+	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	filter: brightness(70%);
 	-webkit-filter: brightness(70%);
+	-moz-filter: brightness(70%);
+	-o-filter: brightness(70%);
+	-ms-filter: brightness(70%);
+	transition: -webkit-filter 0.3s ease-out;
 	-webkit-transition: -webkit-filter 0.3s ease-out;
+	-moz-transition: -webkit-filter 0.3s ease-out;
+	-o-transition: -webkit-filter 0.3s ease-out;
+	-ms-transition: -webkit-filter 0.3s ease-out;
 }
 
 .form {
@@ -521,7 +597,11 @@ h4 {
    font-family: "Verdana";
    text-align: left;
    opacity: 0;
+   transition: opacity 0.2s ease-in;
    -webkit-transition: opacity 0.2s ease-in;
+   -moz-transition: opacity 0.2s ease-in;
+   -o-transition: opacity 0.2s ease-in;
+   -ms-transition: opacity 0.2s ease-in;
 }
 
 .center {
@@ -544,7 +624,11 @@ h4 {
 
 .jobPic:hover h3 {
 	opacity: 1;
+	transition: opacity 0.2s ease-out;
 	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	-ms-transition: opacity 0.2s ease-out;
 }
 
 .jobRole {
@@ -569,14 +653,29 @@ textarea {
 }   
 
 .footic {
+	filter: grayscale(100%) brightness(150%);
 	-webkit-filter: grayscale(100%) brightness(150%);
+	-moz-filter: grayscale(100%) brightness(150%);
+	-o-filter: grayscale(100%) brightness(150%);
+	-ms-filter: grayscale(100%) brightness(150%);
+	transition: -webkit-filter 0.2s ease-out;
 	-webkit-transition: -webkit-filter 0.2s ease-out;
-
+	-moz-transition: -webkit-filter 0.2s ease-out;
+	-o-transition: -webkit-filter 0.2s ease-out;
+	-ms-transition: -webkit-filter 0.2s ease-out;
 }
 
 .footic:hover {
+	filter: none;
 	-webkit-filter: none;
+	-moz-filter: none;
+	-o-filter: none;
+	-ms-filter: none;
+	transition: -webkit-filter 0.2s ease-out;
 	-webkit-transition: -webkit-filter 0.2s ease-out;
+	-moz-transition: -webkit-filter 0.2s ease-out;
+	-o-transition: -webkit-filter 0.2s ease-out;
+	-ms-transition: -webkit-filter 0.2s ease-out;
 }
 
 .aboutImg {

@@ -1,13 +1,6 @@
 <?php 
 
-require 'vendor/autoload.php';
-use Mailgun\Mailgun;
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    # Instantiate the client.
-    $mgClient = new Mailgun('key-3m359i15yv5om9pg7ijemmhg191190r3');
-    $domain = "grinnellappdev.com";
 	
 	$name = trim($_POST["name"]);
     $email = trim($_POST["email"]);
@@ -34,7 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
     
-    require_once("inc/phpMAILER/class.phpmailer.php");
+    require_once("inc/phpMailer/class.phpmailer.php");
+
     $mail = new PHPMailer();
     
     if (!$mail->ValidateAddress($email)) {
@@ -52,28 +46,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     . "What will you bring to the table? " . $q2 . "<br />"
     . "Random questions? " . $q3;
 
-    // $mail->SetFrom($email, $name);
-    // $address = "appdev@grinnell.edu";
-    // $mail->AddAddress($address, "Grinnell AppDev");
-    // $mail->Subject    = "Grinnell AppDev Application Form | " . $name;
-    // $mail->MsgHTML($email_body);
+    $mail->SetFrom($email, $name);
+    $address = "appdev@grinnell.edu";
+    $mail->AddAddress($address, "Grinnell AppDev");
+    $mail->Subject    = "Grinnell AppDev Application Form | " . $name;
+    $mail->MsgHTML($email_body);
 
-    // if(!$mail->Send()) {
-    //     echo "Mailer Error: " . $mail->ErrorInfo;
-    //     mail($address, $subject, $email_body, $headers);
-    //     exit;
-    // } 
-
-    # Make the call to the client.
-    $result = $mgClient->sendMessage("$domain",
-                  array('from'    => $email,
-                        'to'      => 'Grinnell AppDev <appdev@grinnell.edu>',
-                        'subject' => "Grinnell AppDev Application Form | " . $name,
-                        'html'    => $email_body));
-
-    //Todo: Check for errors... documentation located here. 
-    // https://github.com/mailgun/mailgun-php
-
+    if(!$mail->Send()) {
+        echo "Mailer Error: " . $mail->ErrorInfo;
+        mail($address, $subject, $email_body, $headers);
+        exit;
+    } 
 
     header("Location: apply.php?status=thanks");
     exit;
